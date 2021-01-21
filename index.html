@@ -121,9 +121,9 @@
       </div>
     </section>
     <section class="mygoals" id="mygoals">
-      <h1 class="text-success text-center pr-5">My Goals</h1>
-      <div class="container">
-        <div class="row pl-5 pt-3">
+      <h1 class="text-success text-center" style="padding-right: 12%;">My Goals</h1>
+      <div class="container pl-4">
+        <div class="row pl-3 pt-3">
           <div class="col-md-6">
             <div class="card mb-4" style="width: 18rem; height: auto; float: left;">
               <img style="height: 18rem;" src="./images/Canada.jpg" alt="Card image cap">
@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div class="row pl-5 pt-3">
+        <div class="row pl-3 pt-3">
           <div class="col-md-6">
             <div class="card mb-4" style="width: 18rem; height: auto; float: left;">
               <img style="height: 18rem;" src="./images/Party.jpg" alt="Card image cap">
@@ -147,7 +147,7 @@
             </div>
           </div>
         </div>
-        <div class="row pl-5 pt-3">
+        <div class="row pl-3 pt-3">
           <div class="col-md-6">
             <div class="card mb-4" style="width: 18rem; height: auto; float: left;">
               <img style="height: 18rem;" src="./images/BMW.jpg" alt="Card image cap">
@@ -159,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="row pl-5 pt-3">
+        <div class="row pl-3 pt-3">
           <div class="col-md-6">
             <div class="card mb-4" style="width: 18rem; height: auto; float: left;">
               <img style="height: 18rem;" src="./images/Company.jpg" alt="Card image cap">
@@ -175,7 +175,7 @@
     </section>
     <section class="pt-4 pb-4 contactme" id="contactme">
       <!-- Button trigger modal -->
-      <button type="button" class="btn text-center btn-primary ml-3" data-toggle="modal" data-target="#staticBackdrop">
+      <button type="button" class="btn text-center btn-primary" data-toggle="modal" data-target="#staticBackdrop">
         Contact Me
       </button>
 
@@ -194,36 +194,36 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12 pt-4">
-                    <form action="index.html">
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxDKckfuhDn_fYSNqBGtv3REiGvf1lY5I3BuZ3Lse-m-qcVQf4rF1Bd4w/exec">
                       <div class="form-row">
                         <div class="form-group col-md-6">
-                          <input type="text" class="form-control" id="inputName4" placeholder="Name" required="true">
+                          <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="true">
                         </div>
                         <div class="form-group col-md-6">
-                          <input type="text" class="form-control" id="inputPlace4" placeholder="Place" required="true">
+                          <input type="text" class="form-control" name="Place" id="Place" placeholder="Place" required="true">
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
-                          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="true">
+                          <input type="email" class="form-control" name="Email" id="Email" placeholder="Email" required="true">
                         </div>
                         <div class="form-group col-md-6">
-                          <input type="tel" class="form-control" id="inputPlace4" placeholder="Mobile" required="true">
+                          <input type="tel" class="form-control" name="Mobile" id="Mobile" placeholder="Mobile" required="true">
                         </div>
                       </div>
                       <div class="form-group">
-                        <textarea class="form-control" cols="30" rows="10" placeholder="Type your message here..."
+                        <textarea class="form-control" cols="30" name="Message" id="Message" rows="10" placeholder="Type your message here..."
                           required="true"></textarea>
                       </div>
-                    </form>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary w-100">Submit</button>
+            <div class="modal-footer form-group">
+              <input type="submit" value="submit" class="btn btn-primary w-100">
               <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Close</button>
             </div>
+          </form>
           </div>
         </div>
       </div>
@@ -237,7 +237,7 @@
             <a href="https://www.instagram.com/_rahul_karuvadath_/"><i class="fab fa-instagram-square"></i></a>
             <a href="https://www.linkedin.com/in/rahul-karuvadath-481b51201/"><i class="fab fa-linkedin"></i></a>
             <a href=""><i class="fab fa-twitter-square"></i></a>
-            <p>Copyrights <i class="far fa-copyright"></i> 2021 By Rahul</p>
+            <p class="pr-5">Copyrights <i class="far fa-copyright"></i> 2021 By Rahul</p>
           </div>
         </div>
       </div>
