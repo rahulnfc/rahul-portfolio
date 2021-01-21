@@ -60,3 +60,6 @@ html body{
     margin: auto;
     padding-left: 33%;
 }
+.error{
+    color: red;
+}

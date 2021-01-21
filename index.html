@@ -11,7 +11,6 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="icon" href="./images/Rahul Karuvadath.jpg" type="img/gif" sizes="16x16">
   <link rel="stylesheet" href="style.css" type="text/css">
-
   <title>I am Rahul</title>
 </head>
 
@@ -196,23 +195,22 @@
                     <form id="submit-form" action="">
                       <div class="form-row">
                         <div class="form-group col-md-6">
-                          <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="true">
+                          <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" maxlength="10" required="true">
                         </div>
                         <div class="form-group col-md-6">
-                          <input type="text" class="form-control" name="Place" id="Place" placeholder="Place" required="true">
+                          <input type="text" class="form-control" name="Place" id="Place" placeholder="Place" maxlength="10" required="true">
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
-                          <input type="email" class="form-control" name="Email" id="Email" placeholder="Email" required="true">
+                          <input type="email" class="form-control" name="Email" id="Email" placeholder="Email" maxlength="30" required="true">
                         </div>
                         <div class="form-group col-md-6">
-                          <input type="tel" class="form-control" name="Mobile" id="Mobile" placeholder="Mobile" required="true">
+                          <input type="tel" class="form-control" name="Mobile" id="Mobile" placeholder="Mobile" minlength="10" maxlength="10" required="true">
                         </div>
                       </div>
                       <div class="form-group">
-                        <textarea class="form-control" cols="30" name="Message" id="Message" rows="10" placeholder="Type your message here..."
-                          required="true"></textarea>
+                        <textarea class="form-control" cols="30" name="Message" id="Message" rows="10" placeholder="Type your message here..." required="true"></textarea>
                       </div>
                   </div>
                 </div>
@@ -252,26 +250,6 @@
       crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1c029a12c6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $("#submit-form").submit((e)=>{
-          e.preventDefault()
-          $.ajax({
-              url:"https://script.google.com/macros/s/AKfycbxDKckfuhDn_fYSNqBGtv3REiGvf1lY5I3BuZ3Lse-m-qcVQf4rF1Bd4w/exec",
-              data:$("#submit-form").serialize(),
-              method:"post",
-              success:function (response){
-                  alert("Form submitted successfully")
-                  console.log(response)
-                  window.location.reload()
-                  //window.location.href="https://google.com"
-              },
-              error:function (err){
-                  alert("Something Error")
-  
-              }
-          })
-      })
-    </script>
+    <script src="javascript.js"></script>
 </body>
-
 </html>
