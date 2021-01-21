@@ -16,7 +16,7 @@
 
 <body>
   <div class="background">
-    <header class="text-white header">
+    <header class="text-white header w-100" style="position: fixed; z-index: 1;">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgba(102, 51, 153, 0);">
         <h1><a class="navbar-brand text-success" href="index.html"><b>Rahul's World</b></a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -192,7 +192,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12 pt-4">
-                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxDKckfuhDn_fYSNqBGtv3REiGvf1lY5I3BuZ3Lse-m-qcVQf4rF1Bd4w/exec">
+                    <form id="gform" action="">
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="true">
@@ -240,6 +240,25 @@
         </div>
       </div>
     </footer>
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbxDKckfuhDn_fYSNqBGtv3REiGvf1lY5I3BuZ3Lse-m-qcVQf4rF1Bd4w/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
