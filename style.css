@@ -19,6 +19,7 @@ html body{
     background: black;
     padding-left: 13%;
     padding-top: 20%;
+    padding-right: 8%;
 }
 
 .center {
@@ -28,7 +29,7 @@ html body{
   }
 
 .profpic{
-    margin-right: 5%%;
+    padding-right: 7%;
 }
 
 .about{
