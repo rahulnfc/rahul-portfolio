@@ -18,12 +18,11 @@ html body{
 .intro{
     background: black;
     padding-left: 13%;
-    padding-top: 20%;
+    padding-top: 25%;
     padding-right: 8%;
 }
 
 .profpic{
-    padding-left: 25%;
     padding-bottom: 5%;
 }
 
@@ -35,6 +34,7 @@ html body{
 .about{
     background: black;
     padding-top: 5%;
+    padding-right: 8%;
 }
 
 .myskills{
