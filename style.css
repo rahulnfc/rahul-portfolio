@@ -22,17 +22,16 @@ html body{
     padding-right: 8%;
 }
 
-.center {
+/* .center {
     margin: auto;
     width: 50%;
     padding-left: 25%;
-  }
+  } */
 
 .profpic{
     margin: auto;
-    width: 30rem;
+    width: 25rem;
     height: 30rem;
-    padding-right: 10%;
     padding-bottom: 5%;
 }
 
@@ -44,7 +43,6 @@ html body{
 
 .about{
     background: black;
-    margin: auto;
     padding-top: 5%;
 }
 
