@@ -193,7 +193,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12 pt-4">
-                    <form id="gform" action="">
+                    <form id="submit-form" action="">
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="true">
@@ -260,6 +260,7 @@
               method:"post",
               success:function (response){
                   alert("Form submitted successfully")
+                  console.log(response)
                   window.location.reload()
                   //window.location.href="https://google.com"
               },
