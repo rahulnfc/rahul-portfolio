@@ -22,22 +22,13 @@ html body{
     padding-right: 8%;
 }
 
-/* .center {
-    margin: auto;
-    width: 50%;
-    padding-left: 25%;
-  } */
-
 .profpic{
-    margin: auto;
-    width: 22rem;
-    height: 30rem;
+    padding-left: 25%;
     padding-bottom: 5%;
 }
 
 .me{
-    margin:auto;
-    width: 50%;
+    padding-left: 10%;
     padding-bottom: 5%;
 }
 
