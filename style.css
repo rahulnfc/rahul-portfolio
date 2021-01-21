@@ -28,14 +28,11 @@ html body{
     padding-left: 25%;
   }
 
-.profpic{
-    padding-right: 7%;
-}
-
 .about{
     background: black;
     padding-left: 10%;
     padding-top: 8%;
+    padding-right: 8%;
     padding-bottom: 5%;
 }
 
